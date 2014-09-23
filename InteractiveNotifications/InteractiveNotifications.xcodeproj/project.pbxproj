@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F42169F519D1677900F501E8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42169F419D1677900F501E8 /* NotificationCenter.framework */; };
+		F42169FB19D1677900F501E8 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42169FA19D1677900F501E8 /* TodayViewController.m */; };
+		F42169FD19D1677900F501E8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42169FC19D1677900F501E8 /* MainInterface.storyboard */; };
+		F4216A0019D1677900F501E8 /* InteractiveNotificationWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F42169F219D1677800F501E8 /* InteractiveNotificationWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F44E6A8D19C83893007DEB2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F44E6A8C19C83893007DEB2F /* main.m */; };
+		F44E6A9019C83893007DEB2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F44E6A8F19C83893007DEB2F /* AppDelegate.m */; };
+		F44E6A9B19C83893007DEB2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44E6A9A19C83893007DEB2F /* Images.xcassets */; };
+		F44E6A9E19C83893007DEB2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44E6A9C19C83893007DEB2F /* LaunchScreen.xib */; };
+		F44E6AAA19C83894007DEB2F /* InteractiveNotificationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F44E6AA919C83894007DEB2F /* InteractiveNotificationsTests.m */; };
+		F44E6AB819C83CEA007DEB2F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44E6AB719C83CEA007DEB2F /* MainViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F42169FE19D1677900F501E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44E6A7F19C83893007DEB2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F42169F119D1677800F501E8;
+			remoteInfo = InteractiveNotificationWidget;
+		};
+		F4216A0119D1677A00F501E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44E6A7F19C83893007DEB2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F42169F119D1677800F501E8;
+			remoteInfo = InteractiveNotificationWidget;
+		};
+		F44E6AA419C83894007DEB2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44E6A7F19C83893007DEB2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F44E6A8619C83893007DEB2F;
+			remoteInfo = InteractiveNotifications;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4216A0619D1677A00F501E8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F4216A0019D1677900F501E8 /* InteractiveNotificationWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F42169F219D1677800F501E8 /* InteractiveNotificationWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = InteractiveNotificationWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42169F419D1677900F501E8 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		F42169F819D1677900F501E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42169F919D1677900F501E8 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		F42169FA19D1677900F501E8 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		F42169FC19D1677900F501E8 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		F44E6A8719C83893007DEB2F /* InteractiveNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44E6A8B19C83893007DEB2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44E6A8C19C83893007DEB2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F44E6A8E19C83893007DEB2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F44E6A8F19C83893007DEB2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F44E6A9A19C83893007DEB2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F44E6A9D19C83893007DEB2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F44E6AA319C83894007DEB2F /* InteractiveNotificationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InteractiveNotificationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44E6AA819C83894007DEB2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44E6AA919C83894007DEB2F /* InteractiveNotificationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractiveNotificationsTests.m; sourceTree = "<group>"; };
+		F44E6AB319C83A60007DEB2F /* Keys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keys.h; sourceTree = "<group>"; };
+		F44E6AB519C83BE9007DEB2F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F44E6AB619C83CEA007DEB2F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F44E6AB719C83CEA007DEB2F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F42169EF19D1677800F501E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42169F519D1677900F501E8 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44E6A8419C83893007DEB2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44E6AA019C83894007DEB2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F42169F319D1677900F501E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F42169F419D1677900F501E8 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F42169F619D1677900F501E8 /* InteractiveNotificationWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F42169F919D1677900F501E8 /* TodayViewController.h */,
+				F42169FA19D1677900F501E8 /* TodayViewController.m */,
+				F42169FC19D1677900F501E8 /* MainInterface.storyboard */,
+				F42169F719D1677900F501E8 /* Supporting Files */,
+			);
+			path = InteractiveNotificationWidget;
+			sourceTree = "<group>";
+		};
+		F42169F719D1677900F501E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F42169F819D1677900F501E8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F44E6A7E19C83893007DEB2F = {
+			isa = PBXGroup;
+			children = (
+				F44E6A8919C83893007DEB2F /* InteractiveNotifications */,
+				F44E6AA619C83894007DEB2F /* InteractiveNotificationsTests */,
+				F42169F619D1677900F501E8 /* InteractiveNotificationWidget */,
+				F42169F319D1677900F501E8 /* Frameworks */,
+				F44E6A8819C83893007DEB2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F44E6A8819C83893007DEB2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F44E6A8719C83893007DEB2F /* InteractiveNotifications.app */,
+				F44E6AA319C83894007DEB2F /* InteractiveNotificationsTests.xctest */,
+				F42169F219D1677800F501E8 /* InteractiveNotificationWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F44E6A8919C83893007DEB2F /* InteractiveNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				F44E6AB319C83A60007DEB2F /* Keys.h */,
+				F44E6A8E19C83893007DEB2F /* AppDelegate.h */,
+				F44E6A8F19C83893007DEB2F /* AppDelegate.m */,
+				F44E6AB619C83CEA007DEB2F /* MainViewController.h */,
+				F44E6AB719C83CEA007DEB2F /* MainViewController.m */,
+				F44E6A9A19C83893007DEB2F /* Images.xcassets */,
+				F44E6A9C19C83893007DEB2F /* LaunchScreen.xib */,
+				F44E6A8A19C83893007DEB2F /* Supporting Files */,
+			);
+			path = InteractiveNotifications;
+			sourceTree = "<group>";
+		};
+		F44E6A8A19C83893007DEB2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F44E6A8B19C83893007DEB2F /* Info.plist */,
+				F44E6A8C19C83893007DEB2F /* main.m */,
+				F44E6AB519C83BE9007DEB2F /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F44E6AA619C83894007DEB2F /* InteractiveNotificationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F44E6AA919C83894007DEB2F /* InteractiveNotificationsTests.m */,
+				F44E6AA719C83894007DEB2F /* Supporting Files */,
+			);
+			path = InteractiveNotificationsTests;
+			sourceTree = "<group>";
+		};
+		F44E6AA719C83894007DEB2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F44E6AA819C83894007DEB2F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F42169F119D1677800F501E8 /* InteractiveNotificationWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4216A0319D1677A00F501E8 /* Build configuration list for PBXNativeTarget "InteractiveNotificationWidget" */;
+			buildPhases = (
+				F42169EE19D1677800F501E8 /* Sources */,
+				F42169EF19D1677800F501E8 /* Frameworks */,
+				F42169F019D1677800F501E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InteractiveNotificationWidget;
+			productName = InteractiveNotificationWidget;
+			productReference = F42169F219D1677800F501E8 /* InteractiveNotificationWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F44E6A8619C83893007DEB2F /* InteractiveNotifications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44E6AAD19C83894007DEB2F /* Build configuration list for PBXNativeTarget "InteractiveNotifications" */;
+			buildPhases = (
+				F44E6A8319C83893007DEB2F /* Sources */,
+				F44E6A8419C83893007DEB2F /* Frameworks */,
+				F44E6A8519C83893007DEB2F /* Resources */,
+				F4216A0619D1677A00F501E8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F42169FF19D1677900F501E8 /* PBXTargetDependency */,
+				F4216A0219D1677A00F501E8 /* PBXTargetDependency */,
+			);
+			name = InteractiveNotifications;
+			productName = InteractiveNotifications;
+			productReference = F44E6A8719C83893007DEB2F /* InteractiveNotifications.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F44E6AA219C83894007DEB2F /* InteractiveNotificationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44E6AB019C83894007DEB2F /* Build configuration list for PBXNativeTarget "InteractiveNotificationsTests" */;
+			buildPhases = (
+				F44E6A9F19C83894007DEB2F /* Sources */,
+				F44E6AA019C83894007DEB2F /* Frameworks */,
+				F44E6AA119C83894007DEB2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F44E6AA519C83894007DEB2F /* PBXTargetDependency */,
+			);
+			name = InteractiveNotificationsTests;
+			productName = InteractiveNotificationsTests;
+			productReference = F44E6AA319C83894007DEB2F /* InteractiveNotificationsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F44E6A7F19C83893007DEB2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Voyager Innovations Inc.";
+				TargetAttributes = {
+					F42169F119D1677800F501E8 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					F44E6A8619C83893007DEB2F = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					F44E6AA219C83894007DEB2F = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = F44E6A8619C83893007DEB2F;
+					};
+				};
+			};
+			buildConfigurationList = F44E6A8219C83893007DEB2F /* Build configuration list for PBXProject "InteractiveNotifications" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F44E6A7E19C83893007DEB2F;
+			productRefGroup = F44E6A8819C83893007DEB2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F44E6A8619C83893007DEB2F /* InteractiveNotifications */,
+				F44E6AA219C83894007DEB2F /* InteractiveNotificationsTests */,
+				F42169F119D1677800F501E8 /* InteractiveNotificationWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F42169F019D1677800F501E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42169FD19D1677900F501E8 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44E6A8519C83893007DEB2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44E6A9E19C83893007DEB2F /* LaunchScreen.xib in Resources */,
+				F44E6A9B19C83893007DEB2F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44E6AA119C83894007DEB2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F42169EE19D1677800F501E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42169FB19D1677900F501E8 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44E6A8319C83893007DEB2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44E6A9019C83893007DEB2F /* AppDelegate.m in Sources */,
+				F44E6AB819C83CEA007DEB2F /* MainViewController.m in Sources */,
+				F44E6A8D19C83893007DEB2F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44E6A9F19C83894007DEB2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44E6AAA19C83894007DEB2F /* InteractiveNotificationsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F42169FF19D1677900F501E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F42169F119D1677800F501E8 /* InteractiveNotificationWidget */;
+			targetProxy = F42169FE19D1677900F501E8 /* PBXContainerItemProxy */;
+		};
+		F4216A0219D1677A00F501E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F42169F119D1677800F501E8 /* InteractiveNotificationWidget */;
+			targetProxy = F4216A0119D1677A00F501E8 /* PBXContainerItemProxy */;
+		};
+		F44E6AA519C83894007DEB2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F44E6A8619C83893007DEB2F /* InteractiveNotifications */;
+			targetProxy = F44E6AA419C83894007DEB2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F44E6A9C19C83893007DEB2F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F44E6A9D19C83893007DEB2F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4216A0419D1677A00F501E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InteractiveNotificationWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F4216A0519D1677A00F501E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = InteractiveNotificationWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F44E6AAB19C83894007DEB2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F44E6AAC19C83894007DEB2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F44E6AAE19C83894007DEB2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = InteractiveNotifications/PrefixHeader.pch;
+				IBC_FLATTEN_NIBS = NO;
+				INFOPLIST_FILE = InteractiveNotifications/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F44E6AAF19C83894007DEB2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = InteractiveNotifications/PrefixHeader.pch;
+				IBC_FLATTEN_NIBS = NO;
+				INFOPLIST_FILE = InteractiveNotifications/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F44E6AB119C83894007DEB2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InteractiveNotificationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InteractiveNotifications.app/InteractiveNotifications";
+			};
+			name = Debug;
+		};
+		F44E6AB219C83894007DEB2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InteractiveNotificationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InteractiveNotifications.app/InteractiveNotifications";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4216A0319D1677A00F501E8 /* Build configuration list for PBXNativeTarget "InteractiveNotificationWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4216A0419D1677A00F501E8 /* Debug */,
+				F4216A0519D1677A00F501E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F44E6A8219C83893007DEB2F /* Build configuration list for PBXProject "InteractiveNotifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44E6AAB19C83894007DEB2F /* Debug */,
+				F44E6AAC19C83894007DEB2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44E6AAD19C83894007DEB2F /* Build configuration list for PBXNativeTarget "InteractiveNotifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44E6AAE19C83894007DEB2F /* Debug */,
+				F44E6AAF19C83894007DEB2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44E6AB019C83894007DEB2F /* Build configuration list for PBXNativeTarget "InteractiveNotificationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44E6AB119C83894007DEB2F /* Debug */,
+				F44E6AB219C83894007DEB2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F44E6A7F19C83893007DEB2F /* Project object */;
+}

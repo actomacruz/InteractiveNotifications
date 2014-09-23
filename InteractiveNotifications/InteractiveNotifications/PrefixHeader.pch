@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  InteractiveNotifications
+//
+//  Created by Arvin John Tomacruz on 9/16/14.
+//  Copyright (c) 2014 Voyager Innovations Inc. All rights reserved.
+//
+
+#ifndef InteractiveNotifications_PrefixHeader_pch
+#define InteractiveNotifications_PrefixHeader_pch
+
+#import "Keys.h"
+
+#endif
