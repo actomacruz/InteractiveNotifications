@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">    
+	<head>
+		<meta charset="utf-8">
+		<title>Reveal.js 3 Slide Demo</title>
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">    
+		<!--Add support for earlier versions of Internet Explorer -->
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+ 
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			
+				<section>
+					<h1>Interactive Notifications</h1>
+					<p>iOS 8 New Feature</p>        
+				</section>
+				
+				<section>
+					<h3>Demo Application</h3>
+					<a href="https://github.com/actomacruz/InteractiveNotifications" target="_blank"> Github Repository </a>      
+				</section>
+ 
+				<section id="show-a-link">
+					<ul>
+						<li> <h2> User Notification </h2> </li>
+						<li> <h2> Remote Notification </h2> </li>
+					</ul>
+				</section>
+ 
+				<section>
+					<h2>User Notification</h2>
+					<div style="width: 80%; margin-left: auto; margin-right: auto;">
+						<image src="images/alert.png" style="width: 30%; height: 75%; border: 0px; background-color: transparent; float:left;"/>
+						<image src="images/notification_center.png" style="width: 30%; height: 75%; border: none; background-color: transparent;"/>
+						<image src="images/lock_screen.png" style="width: 30%; height: 75%; border: none; background-color: transparent; float: right;"/>
+					</div>
+				</section>
+				
+				<section >
+					<h2 style="float: left;"> User Notification </h2>
+					<br /> <br /> 
+					<ul>
+						<li> <h3> Must register to use </h3> </li>
+						<li> <h3> Require user approval </h3> </li>
+					</ul>
+				</section>
+				
+				<section >
+					<h2 style="float: left;"> User Notification </h2>
+					<br /> <br /> <br /> <br />
+					<code contenteditable style="overflow: hidden; white-space: nowrap; text-align: left; font-size:0.75em;">
+						<p>
+							UIUserNotificationType types = UIUserNotificationTypeAlert | <br /> 
+							<span style="padding-left: 50px;"> UIUserNotificationTypeBadge | UIUserNotificationTypeSound; </span> <br />
+							UIUserNotificationSettings *settings = <br /> 
+							<span style="padding-left: 50px;"> [UIUserNotificationSettings settingsForTypes:types categories:nil]; </span> <br />
+							[[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+						</p>
+					</code>
+				</section>
+				
+				<section >
+					<h2 style="float: left;"> User Notification </h2> <br />
+					<h4 style="float: left; color: lightGray; clear: left;"> App Delegate Callback </h4>
+					<br /> <br /> <br /> <br />
+					<code contenteditable style="overflow: hidden; white-space: nowrap; text-align: left; font-size:0.75em;">
+						<p>
+							- (void)application:(UIApplication *)application <br />
+							<span style="padding-left: 50px;"> didRegisterUserNotificationSettings: </span> <br />
+							<span style="padding-left: 50px;"> (UIUserNotificationSettings *)notificationSettings </span> <br />
+							{ <br />
+							<span style="padding-left: 50px;"> UIUserNotificationType allowedTypes = [notificationSettings types]; </span> <br />
+							} <br />
+							<span style="color: yellow;"> // [myApp currentUserNotificationSettings]; </span>
+						</p>
+					</code>
+				</section>
+				
+				<section>
+					<h2 style="float: left;"> Remote Notification </h2>
+					<br /> <br /> 
+					<div style="padding-left: 50px;">
+						<ul style="list-style-type: none;">
+							<li> 
+								<h4> User Type </h4> 
+								<div style="padding-left: 50px;">
+									<ul>
+										<li> <h5> Needs to register separately </h5> </li>
+									</ul>
+								</div>
+							</li>	
+							<li> 
+								<h4> Silent Type </h4> 
+								<div style="padding-left: 50px;">
+									<ul>
+										<li> <h5> Info.plist <span style="color: yellow;"> UIBackgroundModes </span> array contains <span style="color: yellow;"> remote-notification </span>  </h5> </li>
+									</ul>
+								</div>
+							</li>	
+							<li> <h4> Can use both </h4> </li>
+						</ul>
+					</div>
+				</section>
+				
+				<section >
+					<h2 style="float: left;"> Remote Notification </h2>
+					<br /> <br /> 
+					<ul>
+						<li> <h3> Must register before receiving pushes </h3> </li>
+						<li> <h3> Enabled by default </h3> </li>
+						<li> <h3> Can be disabled through settings </h3> </li>
+					</ul>
+				</section>
+				
+				<section >
+					<h2 style="float: left;"> Remote Notification </h2>
+					<br /> <br /> <br /> <br />
+					<code contenteditable style="overflow: hidden; white-space: nowrap; text-align: left;">
+						<p>
+							UIApplication *myApp = [UIApplication sharedApplication]; <br />
+							<strike style="color: red;"> [myapp registerForRemoteNotificationTypes:types]; </strike> <br />
+							[myapp registerForRemoteNotifications]; <br />
+							<span style="color: yellow;"> [myapp registerUserNotificationSettings:settings]; </span>
+						</p>
+					</code>
+				</section>
+				
+				<section >
+					<h2 style="float: left;"> Notification Actions </h2>
+					<br /> <br /> 
+					<ol>
+						<li> <h3> Register Actions and Categories </h3> </li>
+						<li> <h3> Push/Schedule Notification </h3> </li>
+						<li> <h3> Handle Actions </h3> </li>
+					</ul>
+				</section>
+				
+				<section >
+					<h3 style="float: left;"> Register Actions and Categories </h3>
+					<br /> <br /> 
+					<ul style="margin-left: -100px;">
+						<li> <h4> Actions appear as buttons </h4> </li>
+						<li> <h4> Group of actions is called category </h4> </li>
+						<li> <h4> <a href="https://developer.apple.com/library/prerelease/iOS/documentation/UIKit/Reference/UIMutableUserNotificationAction_class/index.html" target="_blank"> UIMutableUserNotificationAction </a> </h4> </li>
+					    <li> <h4> <a href="https://developer.apple.com/library/ios/documentation/uikit/reference/UIMutableUserNotificationCategory_class/index.html" target="_blank"> UIMutableUserNotificationCategory </a> </h4> </li>
+					</ul>
+					<br /> <br />					
+				</section>
+				
+				<section >
+					<h3 style="float: left;"> Push/Schedule Notification </h3>
+					<br /> <br /> 
+					<ul style="margin-left: -100px;">
+						<li> <h4> "category" key for remote notif </h4> </li>
+						<li> <h4> "category" property for local notif </h4> </li>
+						<li> <h4> 2KB max size for remote notif </h4> </li>
+					</ul>
+					<br /> <br />					
+				</section>
+				
+				<section >
+					<h3 style="float: left;"> Handle Actions </h3>
+					<br /> <br /> 
+					<ul style="margin-left: -100px;">
+						<li> 
+							<p style="font-size: 0.75em;">
+								- (void)application:(UIApplication *)application <br />
+								<span style="padding-left: 50px;"> handleActionWithIdentifier:(NSString *)identifier </span> <br />
+								<span style="padding-left: 50px; color: green;"> forLocalNotification:(UILocalNotification *)notification </span> <br />
+								<span style="padding-left: 50px; color: pink;"> forRemoteNotification:(UILocalNotification *)notification </span> <br />
+								<span style="padding-left: 50px;"> completionHandler:(void (^)())completionHandler; </span>
+							</p>
+						</li>
+						<li> <h4 style="color: yellow;"> completionHandler must be called </h4> </li>
+					</ul>
+					<br /> <br />					
+				</section>
+				
+				<section >
+					<h3 style="float: left;"> Resources </h3>
+					<br /> <br /> 
+					<ul>
+						<li> <a href="http://www.imore.com/interactive-notifications-ios-8-explained" target="_blank"> http://www.imore.com/interactive-notifications-ios-8-explainedy </a>  </li>
+						<li> <a href="http://www.iphonehacks.com/2014/09/ios-8-interactive-notifications.html" target="_blank"> http://www.iphonehacks.com/2014/09/ios-8-interactive-notifications.html </a>  </li>
+						<li> <a href="http://blog.waynehartman.com/archive/2014/06/04/crash-course-in-ios-8-widgets.aspx" target="_blank"> http://blog.waynehartman.com/archive/2014/06/04/crash-course-in-ios-8-widgets.aspx </a>  </h3> </li>
+					</ul>
+				</section>
+ 
+			</div>
+		</div>
+		
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script>
+			Reveal.initialize({
+			});
+		</script>
+	</body>
+</html>
