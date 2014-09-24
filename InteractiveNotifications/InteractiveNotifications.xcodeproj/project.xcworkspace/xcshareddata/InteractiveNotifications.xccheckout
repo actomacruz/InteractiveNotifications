@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BE63B1F2-F392-40AA-9E21-E3927B6422F9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>InteractiveNotifications</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BF3C7FBE279E7CECB2E9ED1CED32F15B80F47BE0</key>
+		<string>github.com:actomacruz/InteractiveNotifications.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>InteractiveNotifications/InteractiveNotifications.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BF3C7FBE279E7CECB2E9ED1CED32F15B80F47BE0</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:actomacruz/InteractiveNotifications.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BF3C7FBE279E7CECB2E9ED1CED32F15B80F47BE0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BF3C7FBE279E7CECB2E9ED1CED32F15B80F47BE0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>interactive-notifications</string>
+		</dict>
+	</array>
+</dict>
+</plist>
